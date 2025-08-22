@@ -16,8 +16,10 @@
   ],
   "scripts": {
     "dev": "tsx watch example/server.ts",
+    "dev2": "tsx watch example/server2.ts",
     "build": "tsc -p tsconfig.build.json",
     "start": "tsx example/server.ts",
+    "start2": "tsx example/server2.ts",
     "example:run": "tsx example/client.ts",
     "example:client-proxy": "tsx example/proxy/client-proxy.ts",
     "example:client-proxy:stdio": "tsx example/proxy/client-proxy.ts --stdio",
