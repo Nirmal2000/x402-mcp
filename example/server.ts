@@ -14,7 +14,7 @@ async function createMcpServer() {
 
   mcpServer.tool(
     'list-todos',
-    `List all the current todos (requires payment: ${config.payment.mcpPricing['list-todos']})`,
+    `List all the current todos (COST: ${config.payment.mcpPricing['list-todos']})`,
     {},
     async (_input, extra) => {
       const user = extra.authInfo?.extra?.sub as string;
@@ -32,7 +32,7 @@ async function createMcpServer() {
 
   mcpServer.tool(
     'add-todo',
-    `Add a todo (requires payment: ${config.payment.mcpPricing['add-todo']})`,
+    `Add a todo (COST: ${config.payment.mcpPricing['add-todo']})`,
     {
       todo: z.string().describe('The content of the todo to be added'),
     },
@@ -52,7 +52,7 @@ async function createMcpServer() {
 
   mcpServer.tool(
     'delete-todo',
-    `Delete a todo by index (requires payment: ${config.payment.mcpPricing['delete-todo']})`,
+    `Delete a todo by index (COST: ${config.payment.mcpPricing['delete-todo']})`,
     {
       index: z.number().describe('The index of the todo to be removed (zero-indexed)'),
     },

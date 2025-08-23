@@ -17,9 +17,9 @@ export const config = {
     network,
     facilitatorUrl,
     mcpPricing: {
-      'list-todos': '$0.001',
-      'add-todo': '$0.002',
-      'delete-todo': '$0.001',
+      'list-todos': '$0.01',
+      'add-todo': '$0.02',
+      'delete-todo': '$0.01',
     },
   },
 };
