@@ -41,6 +41,7 @@ async function main() {
     console.log('🌐 Network: Base Sepolia');
 
     // Create payment-aware transport
+    console.log('🔧 Creating payment-aware transport...', MCP_SERVER_URL);
     const transport = makePaymentAwareClientTransport(MCP_SERVER_URL, walletClient as Wallet);
 
     // Create MCP client
